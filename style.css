@@ -161,6 +161,7 @@
    font-weight:800;
    justify-content: center;
    text-align: center;
+   margin-botoom:10px;
    margin-bottom: 20px;
    line-height: 1.2;
  }
@@ -2187,6 +2188,7 @@ border-image: linear-gradient(
     
 
 }
+
 
 
 
