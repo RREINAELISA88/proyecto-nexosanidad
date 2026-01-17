@@ -1763,8 +1763,7 @@ border-image: linear-gradient(
             }
 
 
-      .hero-content{
-        margin-botoom:30px}
+    
     
     .hero-title {
       font-size: 1.6rem;
@@ -2278,7 +2277,8 @@ border-image: linear-gradient(
 /* RESPONSIVE – MÓVIL */
 /* ========================= */
 @media (max-width: 600px) {
-
+  .hero-content{
+        margin-botoom:30px}
   .proceso-section {
     padding: 60px 15px;
     margin-top: 6rem;
@@ -2319,6 +2319,7 @@ border-image: linear-gradient(
   }
 }
         
+
 
 
 
