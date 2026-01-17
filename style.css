@@ -1751,11 +1751,11 @@ border-image: linear-gradient(
 
                         
     
-      .hero {
+       .hero {
         margin-top:150px;
-          padding: 40px 20px;
-         min-height: calc(100vh - 120px);
-       padding-top:-10px;
+        padding:20px 20px;
+        min-height: calc(100vh - 120px);
+        padding-top:px;
         width: 100%;
         max-width: 100%;
         background-position: center;
@@ -2316,6 +2316,7 @@ border-image: linear-gradient(
   }
 }
         
+
 
 
 
