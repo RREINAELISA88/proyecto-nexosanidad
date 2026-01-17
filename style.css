@@ -53,6 +53,8 @@
  /* HEADER                               */
  /* ------------------------------------ */
  .header {
+    min-height: 100px;
+  height: auto;
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -81,14 +83,11 @@
    transition: 0.3s;
  }
 
-   .logo img {
-   position: relative;
-   width:10rem;
-   height:10rem;
-   align-items: center;
-   top:15px;
-   
- }
+ .logo img {
+  width: clamp(120px, 15vw, 160px);
+  height: auto;
+  top: 0;
+}
 
  /* NAV DESKTOP */
    .nav-links {
@@ -139,7 +138,7 @@
  /* HERO                                 */
  /* ------------------------------------ */
  .hero {
-  padding:50px;
+   padding-top: 180px;
    min-height:85vh;
    /* Ocupa todo el alto de la pantalla */
    background:  url(img/img3_home.webp) no-repeat center center/cover;
@@ -1696,7 +1695,9 @@ border-image: linear-gradient(
       padding:12px 50px;
       box-shadow:var(--shadow);
     }
-   
+    .nav-links {
+    width: 100%;
+  }
       .menu-toggle {
        display: flex !important;
        flex-direction: column;
@@ -1751,11 +1752,16 @@ border-image: linear-gradient(
     .card-text{
       font-size:16px;
     }
-   
+    
    
    .section-title{
     font-size:22px;
     }
+
+      .hero {
+    padding-top: 160px;
+    min-height: auto;
+  }
 .hero-content {
   margin-top: 0;
   /* Forzamos a que no haya margen arriba */
@@ -2212,6 +2218,7 @@ border-image: linear-gradient(
     
 
 }
+
 
 
 
