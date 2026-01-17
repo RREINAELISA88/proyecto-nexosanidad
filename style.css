@@ -146,7 +146,7 @@
   width: 100%;
     max-width: 100%;
     overflow-x: hidden;
-  padding:px;
+  padding:40px;
    min-height:80vh;
     padding-top: 180px;
    /* Ocupa todo el alto de la pantalla */
@@ -1754,7 +1754,7 @@ border-image: linear-gradient(
       .hero {
         margin-top:150px;
           padding: 40px 20px;
-          min-height: calc(20vh - 120px);
+          min-height: calc(110vh - 120px);
        padding-top:50px;
         width: 100%;
         max-width: 100%;
@@ -2169,7 +2169,10 @@ border-image: linear-gradient(
    .header {
      padding: 10px 20px;
    }
+   .hero-content{
+     padding:20px
 
+   }
    .hero {
      padding: 140px 20px 40px;
      text-align: center;
@@ -2313,6 +2316,7 @@ border-image: linear-gradient(
   }
 }
         
+
 
 
 
