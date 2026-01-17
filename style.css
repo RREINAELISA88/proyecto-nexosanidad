@@ -139,7 +139,7 @@
  /* HERO                                 */
  /* ------------------------------------ */
  .hero {
-  padding: 40px;
+  padding:50px;
    min-height:85vh;
    /* Ocupa todo el alto de la pantalla */
    background:  url(img/img3_home.webp) no-repeat center center/cover;
@@ -2187,5 +2187,6 @@ border-image: linear-gradient(
     
 
 }
+
 
 
