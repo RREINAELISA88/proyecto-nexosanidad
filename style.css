@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 :root {
   /* Colores Principales */
@@ -33,6 +32,11 @@
    padding: 0;
  }
   
+
+ body,
+ html {
+   overflow-x: hidden;
+ }
     body {
    height: 100%;
    font-family:'Poppins';
@@ -53,8 +57,8 @@
  /* HEADER                               */
  /* ------------------------------------ */
  .header {
-    min-height: 100px;
-  height: auto;
+  min-height: 100px;
+    height: auto;
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -67,6 +71,7 @@
    z-index: 1000;
    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
  }
+ 
 
  .menu-toggle {
    display: none;
@@ -84,12 +89,12 @@
  }
 
  .logo img {
-  width: clamp(120px, 15vw, 160px);
-  height: auto;
-  top: 0;
-}
+   width: clamp(120px, 15vw, 160px);
+   height: auto;
+   top: 0;
+ }
 
- /* NAV DESKTOP */
+/* NAV DESKTOP */
    .nav-links {
    display: flex;
    gap:40px;
@@ -138,35 +143,40 @@
  /* HERO                                 */
  /* ------------------------------------ */
  .hero {
-   padding-top: 180px;
+  width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  padding: 40px;
    min-height:85vh;
+    padding-top: 180px;
    /* Ocupa todo el alto de la pantalla */
-   background:  url(img/img3_home.webp) no-repeat center center/cover;
+   background:  url('/img/img3_home.webp') no-repeat center center/cover;
    display: flex;
    align-items: center;
    justify-content: center;
    text-align: center;
    color: #ffffff;
-   
+   }
+
   
- }
 
  .hero-content {
   max-width: 900px;
  }
 
+ 
+
  .hero-title {
-   font-size: clamp(1.8rem, 4vw, 3rem);
-   font-weight:800;
+ font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight:800;
    justify-content: center;
    text-align: center;
-   margin-botoom:10px;
    margin-bottom: 20px;
    line-height: 1.2;
  }
 
   .hero-p {
-    font-size: clamp(1rem, 2.5vw, 1.25rem);
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
    margin-bottom: 15px;
    opacity: 0.9;
    color: #fff;
@@ -1680,6 +1690,9 @@ border-image: linear-gradient(
     @media (max-width: 900px) {
 
       .header {
+     backdrop-filter: none;
+     height: auto;
+    padding: 10px 20px;
       position: fixed;
       top: 0;
       left: 0;
@@ -1695,9 +1708,7 @@ border-image: linear-gradient(
       padding:12px 50px;
       box-shadow:var(--shadow);
     }
-    .nav-links {
-    width: 100%;
-  }
+   
       .menu-toggle {
        display: flex !important;
        flex-direction: column;
@@ -1707,13 +1718,13 @@ border-image: linear-gradient(
   
      /* 3. Ajuste CRÍTICO para que el menú aparezca */
      .nav-links {
+          width: 100%;
       display: none;
        /* Por defecto escondido */
        position: absolute;
        top: 100%;
        /* Aparece justo debajo del logo */
        left: 0;
-       width:50%;
        background-color: #ffffff;
        flex-direction: column;
        padding:10px 0;
@@ -1733,9 +1744,33 @@ border-image: linear-gradient(
        border-bottom: 1px solid #eee;
        color: #09365a;
        font-weight:500;
-       
-     }
+      }
+
+                        
     
+      .hero {
+       padding-top: 160px;
+       min-height: auto;
+      width: 100%;
+        max-width: 100%;
+        padding: 160px 20px 40px;
+        background-position: center;
+        background-size: cover;
+            }
+     
+    
+    .hero-title {
+      font-size: 1.6rem;
+        line-height: 1.3;
+      margin-top: 0;
+      line-height: 1.3;
+    }
+  
+    .hero-p {
+      font-size: 0.95rem;
+      margin-bottom: 20px;
+      color: #fff;
+    }
 
   .title-2{
   font-size:22px;
@@ -1752,33 +1787,16 @@ border-image: linear-gradient(
     .card-text{
       font-size:16px;
     }
-    
+   
    
    .section-title{
     font-size:22px;
     }
 
-      .hero {
-    padding-top: 160px;
-    min-height: auto;
-  }
-.hero-content {
-  margin-top: 0;
-  /* Forzamos a que no haya margen arriba */
-}
 
-.hero-title {
-  font-size: 1.8rem;
-  /* Título un poco más pequeño para que no ocupe tanto */
-  margin-top: 0;
-  line-height: 1.3;
-}
 
-.hero-p {
-  font-size: 1rem;
-  margin-bottom: 20px;
-  color: #fff;
-}
+
+
     
  
  /* ------------------------------------ */
@@ -2141,29 +2159,29 @@ border-image: linear-gradient(
             
  } 
 
-@media (max-width: 480px) {
 
-  .header {
-    padding: 10px 20px;
-  }
+ @media (max-width: 480px) {
 
-  .hero {
-    padding: 140px 20px 40px;
-    text-align: center;
-  }
+   .header {
+     padding: 10px 20px;
+   }
 
-  .hero-buttons {
-    flex-direction: column;
-    width: 100%;
-  }
+   .hero {
+     padding: 140px 20px 40px;
+     text-align: center;
+   }
 
-  .btn-primary,
-  .btn-secondary {
-    width: 100%;
-    text-align: center;
-  }
-}
+   .hero-buttons {
+     flex-direction: column;
+     width: 100%;
+   }
 
+   .btn-primary,
+   .btn-secondary {
+     width: 100%;
+     text-align: center;
+   }
+ }
     
 /* Botón Flotante de WhatsApp */
 .whatsapp-float {
@@ -2216,12 +2234,78 @@ border-image: linear-gradient(
     }
 
     
+}
+/* ========================= */
+/* RESPONSIVE – TABLET */
+/* ========================= */
+@media (max-width: 1024px) {
 
+  .proceso-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .section-title {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+  }
+
+  .proceso-container {
+    padding: 0 30px;
+  }
+
+  .proceso-item {
+    padding: 25px 20px;
+  }
+
+  .proceso-text {
+    min-height: auto;
+    text-align: center;
+  }
 }
 
+/* ========================= */
+/* RESPONSIVE – MÓVIL */
+/* ========================= */
+@media (max-width: 600px) {
 
+  .proceso-section {
+    padding: 60px 15px;
+    margin-top: 6rem;
+  }
 
+  .proceso-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 
+  .section-title {
+    font-size: 1.9rem;
+    margin-bottom: 30px;
+    top: 0;
+  }
 
+  .proceso-item {
+    padding: 25px 18px;
+  }
 
+  .proceso-icon {
+    width: 65px;
+    height: 65px;
+  }
 
+  .proceso-icon i {
+    font-size: 22px;
+  }
+
+  .proceso-subtitle {
+    font-size: 1.15rem;
+  }
+
+  .proceso-text {
+    font-size: 0.95rem;
+    text-align: center;
+    min-height: auto;
+  }
+}
+   
