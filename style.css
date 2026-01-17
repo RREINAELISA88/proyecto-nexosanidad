@@ -150,7 +150,10 @@
    min-height:85vh;
     padding-top: 180px;
    /* Ocupa todo el alto de la pantalla */
-   background:  url('img/img3_home.webp') no-repeat center center/cover;
+  background-image: url('img/img3_home.webp');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
    display: flex;
    align-items: center;
    justify-content: center;
@@ -2310,6 +2313,7 @@ border-image: linear-gradient(
   }
 }
         
+
 
 
 
