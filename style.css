@@ -2134,6 +2134,30 @@ border-image: linear-gradient(
                  }
             
  } 
+
+@media (max-width: 480px) {
+
+  .header {
+    padding: 10px 20px;
+  }
+
+  .hero {
+    padding: 140px 20px 40px;
+    text-align: center;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    text-align: center;
+  }
+}
+
     
 /* Botón Flotante de WhatsApp */
 .whatsapp-float {
@@ -2188,6 +2212,7 @@ border-image: linear-gradient(
     
 
 }
+
 
 
 
