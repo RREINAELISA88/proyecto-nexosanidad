@@ -157,7 +157,7 @@
  }
 
  .hero-title {
-   font-size: 3rem;
+   font-size: clamp(1.8rem, 4vw, 3rem);
    font-weight:800;
    justify-content: center;
    text-align: center;
@@ -167,7 +167,7 @@
  }
 
   .hero-p {
-   font-size: 1.25rem;
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
    margin-bottom: 15px;
    opacity: 0.9;
    color: #fff;
@@ -2212,6 +2212,7 @@ border-image: linear-gradient(
     
 
 }
+
 
 
 
