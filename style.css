@@ -1761,7 +1761,10 @@ border-image: linear-gradient(
         background-position: center;
         background-size: cover;
             }
-     
+
+
+      .hero-content{
+        margin-botoom:30px}
     
     .hero-title {
       font-size: 1.6rem;
@@ -2316,6 +2319,7 @@ border-image: linear-gradient(
   }
 }
         
+
 
 
 
