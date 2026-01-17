@@ -146,8 +146,8 @@
   width: 100%;
     max-width: 100%;
     overflow-x: hidden;
-  padding: 40px;
-   min-height:85vh;
+  padding:px;
+   min-height:80vh;
     padding-top: 180px;
    /* Ocupa todo el alto de la pantalla */
   background-image: url('img/img3_home.webp');
@@ -2313,6 +2313,7 @@ border-image: linear-gradient(
   }
 }
         
+
 
 
 
