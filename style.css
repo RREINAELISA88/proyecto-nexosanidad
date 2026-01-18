@@ -1921,7 +1921,35 @@ border-image: linear-gradient(
 
 .nf-wrapper {
   grid-template-columns: 1fr;
+  gap: 2rem;
 }
+
+
+ .nf-section {
+   padding: 3rem 1rem;
+ }
+
+ .nf-info,
+ .nf-col-form {
+   padding: 2rem 1.5rem;
+ }
+    .nf-info h2,
+    .nf-title {
+      font-size: 1.5rem;
+    }
+
+         .nf-info p,
+         .nf-desc {
+           font-size: 0.95rem;
+         }
+    
+         .nf-btn {
+           width: 100%;
+         }
+    
+         .nf-legal {
+           font-size: 0.9rem;
+         }
  
 /*------------------------------*/
 /* SECCIÓN SOBRE NOSOTROS*/
@@ -2335,6 +2363,7 @@ border-image: linear-gradient(
   }
 }
         
+
 
 
 
