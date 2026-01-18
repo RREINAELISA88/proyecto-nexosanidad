@@ -144,21 +144,21 @@
  /* ------------------------------------ */
  .hero {
   width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
+  max-width: 100%;
+  overflow-x: hidden;
   padding:40px;
-   min-height:80vh;
-    padding-top: 180px;
-   /* Ocupa todo el alto de la pantalla */
+  min-height:80vh;
+  padding-top: 180px;
+  /* Ocupa todo el alto de la pantalla */
   background-image: url('img/img3_home.webp');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   text-align: center;
-   color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
    }
 
   
@@ -170,12 +170,12 @@
  
 
  .hero-title {
- font-size: clamp(1.8rem, 4vw, 3rem);
+  font-size: clamp(1.8rem, 4vw, 3rem);
   font-weight:800;
-   justify-content: center;
-   text-align: center;
-   margin-bottom: 20px;
-   line-height: 1.2;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 1.2;
  }
 
   .hero-p {
@@ -694,6 +694,12 @@ border-image: linear-gradient(
 
 
 /* ====== SECCIÓN FORMULARIO ====== */
+.nf-section {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 .nf-wrapper {
   max-width: 1200px;
   margin: 0 auto;
@@ -1920,8 +1926,9 @@ border-image: linear-gradient(
 }
 
 .nf-wrapper {
-  grid-template-columns: 1fr;
-  gap: 2rem;
+    grid-template-columns: 1fr;
+    width: 100%;
+    gap: 2rem;
 }
 
 
@@ -2363,6 +2370,7 @@ border-image: linear-gradient(
   }
 }
         
+
 
 
 
