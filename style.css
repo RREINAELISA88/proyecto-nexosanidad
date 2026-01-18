@@ -243,6 +243,9 @@
   font-size:20px;
 
 }
+ p{text-align: left;
+      hyphens: auto;
+      word-break: normal;}
 
  .section-1 {
    padding: 60px 20px;
@@ -2319,6 +2322,7 @@ border-image: linear-gradient(
   }
 }
         
+
 
 
 
