@@ -696,15 +696,22 @@ border-image: linear-gradient(
 /* ====== SECCIÓN FORMULARIO ====== */
 .nf-wrapper {
   max-width: 1200px;
-  margin: auto;
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 50px;
-  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: flex-start;
 }
 
 .img-enf  img{
- width:20%;
+ .img-enf  img{
+  width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    object-fit: cover;
+}
 }
 
 .nf-info h2 {
@@ -849,8 +856,9 @@ border-image: linear-gradient(
 
 /* ===== BOTÓN ===== */
 .nf-btn {
+  width: 100%;
+  max-width: 280px;
   margin-top: 1.5rem;
-  width:35%;
   padding: 0.9rem;
   background: linear-gradient(to bottom, #9fc9fc, #5bc987);
   color: #fff;
@@ -1804,7 +1812,9 @@ border-image: linear-gradient(
     font-size:22px;
     }
 
-
+.title-form{
+  font-size:20px;
+}
 
 
 
@@ -1888,13 +1898,14 @@ border-image: linear-gradient(
   justify-content: center;
 }
 
-.title-str {
+      .title-str {
   margin-top: 50px;
-  width: 500px;
+  padding-bottom: 20px;
   justify-content: center;
   text-align: center;
 
 }
+
 
 /* Ajuste de textos y listas */
 .enfermeras-content p,
@@ -2324,6 +2335,7 @@ border-image: linear-gradient(
   }
 }
         
+
 
 
 
