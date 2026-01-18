@@ -2331,10 +2331,10 @@ border-image: linear-gradient(
 /* ========================= */
 @media (max-width: 600px) {
   .hero-content{
-        margin-botoom:30px}
+    margin-botoom:50px}
   .proceso-section {
-    padding: 60px 15px;
-    margin-top: 6rem;
+    padding:20px 15px;
+    margin-top:2rem;
   }
 
   .proceso-grid {
@@ -2372,6 +2372,7 @@ border-image: linear-gradient(
   }
 }
         
+
 
 
 
