@@ -2083,6 +2083,13 @@ background-color: #e5e5e5;
      padding: 10px 20px;
    }
 
+
+   .hero.title{
+     font-size:19px;
+     padding-top:10px;
+
+     
+   }
     .nf-section {
       padding: 3rem 1rem;
     }
@@ -2158,11 +2165,9 @@ background-color: #e5e5e5;
            min-height: 85vh;
         }
 
-
-
-  
-        .hero-title {
-          font-size:19px;
+         .hero-title {
+          padding-top:10px
+          font-size:22px;
           text-align: center;
         }
     
@@ -2330,6 +2335,7 @@ background-color: #e5e5e5;
     min-height: auto;
   }
 }
+
 
 
 
