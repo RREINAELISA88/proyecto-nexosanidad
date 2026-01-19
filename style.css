@@ -142,12 +142,13 @@
  /* ------------------------------------ */
  /* HERO                                 */
  /* ------------------------------------ */
+
  .hero {
   width: 100%;
   max-width: 100%;
   overflow-x: hidden;
-  padding:40px;
-    min-height:50vh;
+  padding: clamp(1.5rem, 5vw, 4rem);
+
   padding-top: 180px;
   /* Ocupa todo el alto de la pantalla */
   background-image: url('img/img3_home.webp');
@@ -2372,6 +2373,7 @@ border-image: linear-gradient(
   }
 }
         
+
 
 
 
