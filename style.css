@@ -148,8 +148,7 @@
   max-width: 100%;
   overflow-x: hidden;
   padding: clamp(1.5rem, 5vw, 4rem);
-
-  padding-top: 180px;
+   padding-top: 180px;
   /* Ocupa todo el alto de la pantalla */
   background-image: url('img/img3_home.webp');
   background-repeat: no-repeat;
@@ -166,7 +165,7 @@
 
  .hero-content {
   max-width: 900px;
-  min-height:50vh;
+ 
  }
 
  
@@ -2366,6 +2365,7 @@ border-image: linear-gradient(
   }
 }
         
+
 
 
 
