@@ -2084,8 +2084,8 @@ background-color: #e5e5e5;
 
 
    .hero.title{
-     font-size:19px;
-     padding-top:10px;
+     font-size:18px;
+    
 
      
    }
@@ -2166,7 +2166,7 @@ background-color: #e5e5e5;
 
          .hero-title {
           padding-top:10px
-          font-size:22px;
+          font-size:18px;
           text-align: center;
         }
     
@@ -2334,6 +2334,7 @@ background-color: #e5e5e5;
     min-height: auto;
   }
 }
+
 
 
 
