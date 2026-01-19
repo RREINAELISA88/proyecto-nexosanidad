@@ -1772,13 +1772,10 @@ border-image: linear-gradient(
     
    .hero {
         margin-top: auto;
-        padding: 40px 20px 30px;
-        height: auto;
-        min-height: auto;
-        padding-top:50px;
-        width: 100%;
+         min-height: 85vh;
+         width: 100%;
         max-width: 100%;
-       margin-top: 120px; /* altura del header */
+        margin-top: 120px; /* altura del header */
         background-position: center top;
         background-size: cover;
             }
@@ -1884,8 +1881,8 @@ border-image: linear-gradient(
   padding: 3rem 1.5rem;
  }
   
-     .beneficios-grid {
-       grid-template-columns: 1fr;
+ .beneficios-grid {
+  grid-template-columns: 1fr;
      }
 
 
@@ -1897,9 +1894,6 @@ border-image: linear-gradient(
   text-align: center;
 
 }
-
-
-
 .enfermeras-grid {
   margin: auto;
   display: flex;
@@ -2230,8 +2224,7 @@ border-image: linear-gradient(
 
    }
    .hero {
-     padding: 140px 20px 40px;
-     text-align: center;
+      min-height: 85vh;
    }
 
    .hero-buttons {
@@ -2373,6 +2366,7 @@ border-image: linear-gradient(
   }
 }
         
+
 
 
 
