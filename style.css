@@ -1766,10 +1766,6 @@ background-color: #e5e5e5;
        font-weight:500;
       }
 
-               
-
-    
- 
  /* ------------------------------------ */
  /* SECCIONES GENERALES                  */
  /* ------------------------------------ */
@@ -2186,35 +2182,64 @@ text-align: center;
     }
  
        
-
-             .nf-wrapper {
-               flex-direction: column;
-               gap: 2rem;
-             }
+/*********SECTION-ENFERMERAS*********/
+    .nf-wrapper {
+      flex-direction: column;
+      align-items: center;
+      /* centra las columnas */
+      gap: 2rem;
+      /* separación entre columnas */
+      padding: 0 10px;
+      /* margen lateral para no tocar los bordes */
+    }
+  
+    /* Columnas ocupan 100% */
+    .nf-info,
+    .nf-col-form {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  
+    /* Imagen: que no toque los bordes y se adapte */
+    .nf-info .img-enf {
+      width: 100%;
+      max-width:500px;
+      text-align: center;
+      /* opcional para que no se haga gigante */
+      height: auto;
+    }
+  
+    /* Títulos y textos centrados */
+    .nf-info h2,
+    .nf-info p,
+    .nf-subtitle,
+    .nf-desc,
+    .nf-small {
+      text-align: center;
+    }
+  
+    /* Formulario: ocupa todo el ancho disponible */
+    .nf-form {
+      width: 100%;
+      padding: 1.5rem;
+      /* cómodo para móvil */
+    }
+  
+    /* Botón: ancho completo */
+    .nf-btn {
+      width: 100%;
+      max-width: 320px;
+      text-align: center;
+    }
       
-             .nf-info,
-             .nf-col-form {
-               flex: 1 1 100%;
-             }
+            
       
-             .nf-info h2,
-             .nf-title {
-               text-align: center;
-             }
+            
       
-             .nf-info p,
-             .nf-desc,
-             .nf-small {
-               text-align: center;
-             }
+           
       
-             .nf-list li {
-               justify-content: center;
-             }
-      
-             .nf-form {
-               padding: 1.5rem;
-             }
+           
+            
 
  /*********CONTACTO*******/
 .contact-main-layout {
@@ -2340,6 +2365,7 @@ text-align: center;
     min-height: auto;
   }
 }
+
 
 
 
