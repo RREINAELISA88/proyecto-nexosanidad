@@ -2159,6 +2159,7 @@ background-color: #e5e5e5;
     }
 .hero {
   margin-top: 140px;
+   min-height:65vh;
   /* ajusta si el header crece */
   
 }
@@ -2339,6 +2340,7 @@ text-align: center;
     min-height: auto;
   }
 }
+
 
 
 
