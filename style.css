@@ -673,6 +673,7 @@ border-image: linear-gradient(
 }
 
 .beneficios-grid {
+    padding-top:30px;
   display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
@@ -753,11 +754,6 @@ border-image: linear-gradient(
   max-width: 600px;  /* no se haga gigante en pantallas enormes */
   box-sizing: border-box;
 }
-
-
-
-
-
 
 /* Imagen */
 .nf-info .img-enf {                                                                  
@@ -2389,6 +2385,7 @@ text-align: center;
     min-height: auto;
   }
 }
+
 
 
 
