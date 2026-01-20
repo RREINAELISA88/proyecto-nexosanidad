@@ -2160,7 +2160,7 @@ background-color: #e5e5e5;
 .hero {
   margin-top: 140px;
   /* ajusta si el header crece */
-  min-height:65vh;
+  min-height:75vh;
 }
 
 .hero-title {
@@ -2339,6 +2339,7 @@ text-align: center;
     min-height: auto;
   }
 }
+
 
 
 
