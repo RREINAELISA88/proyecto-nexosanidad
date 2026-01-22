@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 :root {
   /* Colores Principales */
@@ -101,7 +100,7 @@
  }
 
 /* NAV DESKTOP */
-   .nav-links {
+   .nav-links  {
    display: flex;
    gap:40px;
   align-items: center;
@@ -109,7 +108,7 @@
 
  .nav-links a {
    color: #222;
-   font-size:16px;
+   font-size:18px;
    font-weight:400;
    transition: 0.4s;
 
@@ -150,13 +149,13 @@
  /* ------------------------------------ */
   .hero {
   position: relative;
-    min-height: 65vh;
-    margin-top: 120px;
-    /* 👈 MISMO ALTO QUE EL HEADER */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+  min-height: 65vh;
+  margin-top: 120px;
+  /* 👈 MISMO ALTO QUE EL HEADER */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
  }
  
   
@@ -673,7 +672,7 @@ border-image: linear-gradient(
 }
 
 .beneficios-grid {
-    padding-top:30px;
+  padding-top:30px;
   display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
@@ -685,7 +684,6 @@ border-image: linear-gradient(
    .beneficio-item {
    background: white;
     border-left: 5px solid #10B981;
-      ;
     padding: 25px;
     border-radius: 14px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
@@ -754,6 +752,11 @@ border-image: linear-gradient(
   max-width: 600px;  /* no se haga gigante en pantallas enormes */
   box-sizing: border-box;
 }
+
+
+
+
+
 
 /* Imagen */
 .nf-info .img-enf {                                                                  
@@ -917,6 +920,10 @@ border-image: linear-gradient(
 
 /* Título centrado */
  .title-fullwidth .title-enf {
+  width:auto;
+  max-width: 1200px;
+  justify-content: center;
+  margin: auto;
   text-align: center;
   font-size:2.6rem;
   color: #0f2a44;
@@ -1188,6 +1195,8 @@ border-image: linear-gradient(
   
 }
 
+
+
 /* Imagen como fondo */
 .banner img {
   position: absolute;
@@ -1195,6 +1204,7 @@ border-image: linear-gradient(
   width: 100%;
   height: 100%;
   object-fit: cover;
+  
 }
 
 /* Contenido centrado sobre la imagen */
@@ -1220,17 +1230,19 @@ border-image: linear-gradient(
 }
 
 .subtitle-blg {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin-top: 0.5rem;
+  color: #09365a;
+    background-color: rgba(255, 255, 255, 0.584);
+  }
   
- 
-}
 
 .section-title-1 {
   color: #09365a;
   font-size: 30px;
   font-weight: 600;
   margin-bottom:60px;
+  text-align: center;
   margin-top: 50px;
 }
 
@@ -1257,63 +1269,65 @@ border-image: linear-gradient(
  
 
 /* BLOG SECTIONS */
-.container-blg{
-    max-width: 1100px;
-  justify-content: center;
-   text-align: center;
-   margin: 0 auto;
-   padding: 0 20px;
-   margin-bottom: 50px;
 
- }        
-.blog-section-1 {
+/* Contenedor de la cuadrícula */
+.blog-grid {
   display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
   justify-content: center;
-  margin: auto;
-  padding: 1rem 0;
-  background: #ebeeeb;
-  margin-top:2rem;
-
-
 }
 
-        .blog-grid {
-         display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-          gap:1rem;
-        }
+/* La tarjeta del blog */
+.blog-card-1 {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  /* Esto corta cualquier cosa que intente salirse */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
 
-        .blog-card-1 {
-         width:100%;
-         background:#fbf0f0;
-         margin:auto;
-         padding:20px;
-         border-radius:10px;
-         overflow:hidden;
-         box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-         transition:transform 0.3s;
-        
-           }
+/* Contenedor de la imagen */
+.card-image-container {
+  width: 100%;
+  height: 250px;
+  /* Ajusta esta altura según prefieras */
+  overflow: hidden;
+}
 
- 
+/* La imagen propiamente dicha */
+.blog-img-fix {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Mantiene la proporción y llena el espacio */
+  display: block;
+  transition: transform 0.3s ease;
+}
 
-         .card-image {
-          width: 100%;
-          max-width:500px;
-          height:400px;
-          background-size: cover;
-          object-fit: cover;
-          background-position: center;
-        }
+.blog-card-1:hover .blog-img-fix {
+  transform: scale(1.05);
+  /* Efecto de zoom elegante al pasar el ratón */
+}
 
+/* Contenido de texto */
+.card-content {
+  padding: 20px;
+  flex-grow: 1;
+}
 
-                .blog-section-2 {
-                  min-height:70vh;
-                  /* mejor que height fijo */
-                  margin-top: 50px;
-                  background-color: #f4f5f4;
-                  padding: 60px 0;
-                }
+.text-h3 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  color: #003366;
+  /* Color corporativo */
+}
+
         
                 /* Título */
                 .section-title-2 {
@@ -1398,9 +1412,14 @@ border-image: linear-gradient(
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
 }
 .section-title-blog{
+  font-size:32px;
   text-align: center;
   color: #3c3d3d;
-   padding-bottom:50px;
+   padding-bottom:20px;
+}
+
+.section-subtitle{
+  font-size:20px;
 }
 .homologacion-list {
   list-style: none;
@@ -1410,7 +1429,9 @@ border-image: linear-gradient(
   grid-template-columns: repeat(2, 1fr);
   gap: 18px 40px;
 }
-
+.tx-nota{
+  font-size:18px;
+}
 .homologacion-list li {
   position: relative;
   padding-left: 28px;
@@ -1431,41 +1452,74 @@ border-image: linear-gradient(
         
         /* FEATURES SECTION */
 
+                /* Fix para que nada se salga del contenedor */
+                .container-3 {
+                  max-width: 1200px;
+                  margin: 0 auto;
+                  padding: 40px 20px;
+                }
         
-        .features {
-            background: #fafefc;
-            color: rgb(79, 78, 78);
-            padding:2rem 0;
-        }
-
-         .features-grid {
-          display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-          gap: 2rem;
-        }
-
-        .feature-card {
-         width:450px;
-         text-align: center;
-         padding: 2rem;
-          width:220px;
-        }
-
+                .homologacion-grid {
+                  display: grid;
+                  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                  gap: 25px;
+                  margin-top: 30px;
+                }
         
-        .feature-icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            color: #10B981;
-        }
-
-        .feature-card h3 {
-            margin-bottom:2rem;
-            font-size: 1.3rem;
-        }
-
-  .feature-card p{
-   font-size:16px;
-    }
+                /* Estilo de las tarjetas de profesiones */
+                .homologacion-card {
+                  background: #ffffff;
+                  padding: 30px;
+                  border-radius: 12px;
+                  border-bottom: 4px solid #007bff;
+                  /* Detalle de color corporativo */
+                  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+                  transition: transform 0.3s ease;
+                  text-align: center;
+                }
+        
+                .homologacion-card:hover {
+                  transform: translateY(-5px);
+                }
+        
+                .homologacion-card i {
+                  font-size: 2.5rem;
+                  color: #007bff;
+                  margin-bottom: 15px;
+                }
+        
+                .homologacion-card h3 {
+                  font-size: 1.2rem;
+                  margin-bottom: 15px;
+                  color: #2c3e50;
+                }
+        
+                .homologacion-card ul {
+                  list-style: none;
+                  padding: 0;
+                  text-align: left;
+                }
+        
+                .homologacion-card li {
+                  padding: 8px 0;
+                  border-bottom: 1px solid #eee;
+                  font-size: 0.95rem;
+                  color: #555;
+                }
+        
+                .homologacion-card li:last-child {
+                  border-bottom: none;
+                }
+        
+                /* Aviso inferior */
+                .homologacion-notice {
+                  margin-top: 40px;
+                  background: #f0f7ff;
+                  padding: 20px;
+                  border-radius: 8px;
+                  text-align: center;
+                }
+        
 
 /*---------------------------------------*/
             /*CONTACTO*/
@@ -1481,6 +1535,34 @@ background-color: #e5e5e5;
 
 }
 
+     /* 1. HERO - ANCHO COMPLETO */
+     .hero-contact-header {
+       width: 100%;
+       height: 200px;
+       background: linear-gradient(135deg, #9bf4d2, #759bd5);
+       margin-top: 152px;
+       /* Degradado profesional */
+       padding: 60px 0;
+       text-align: center;
+       color: #0f2a44;
+       margin-bottom: 60px;
+     }
+  
+     .hero-contact-title {
+       font-size: 3rem;
+       font-weight: 800;
+       letter-spacing: -1px;
+       align-items: center;
+     }
+  
+     .hero-contact-subtitle {
+       font-size: 1.2rem;
+       max-width: 600px;
+       margin: 0 auto;
+       opacity: 0.9;
+       font-weight: 600;
+       color: white;
+     }
 
 .contact-main-layout {
   display: flex;
@@ -1496,20 +1578,16 @@ background-color: #e5e5e5;
     /* margen lateral */
 }
 
-
-
-
 /* Columna Izquierda */
 .contact-content-area,
 .contact-info-sidebar {
-  .contact-content-area {
-      flex: 1 1 45%;
-      max-width: 600px;
-      padding: 20px;
-      /* 👈 espacio interno alrededor del texto */
-      box-sizing: border-box;
-      /* importante para que padding no rompa el ancho */
-    }
+  flex: 1 1 45%;
+  max-width: 600px;
+  padding: 20px;
+  /* 👈 espacio interno alrededor del texto */
+  box-sizing: border-box;
+  /* importante para que padding no rompa el ancho */
+    
 }
 
 
@@ -1523,6 +1601,96 @@ background-color: #e5e5e5;
   margin: 0;
 }
 
+
+/********contact form**********/
+/* 1. Contenedor del formulario para centrarlo y darle aire */
+.contact-form {
+  max-width:600px;
+  width: 100%;
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  /* Esto separa los campos automáticamente */
+}
+
+/* 2. Estilo para los inputs, el select y el textarea */
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  /* Ocupa todo el contenedor */
+  max-width: 100%;
+  /* Evita que se salga */
+  padding: 15px;
+  margin-bottom: 20px;
+  /* Separa los campos entre sí */
+  border: 1px solid #d1d1d1;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+  /* Fundamental para que no se descuadre */
+}
+
+/* El área de texto ahora se verá proporcional */
+/* El área de texto ahora se verá proporcional */
+.contact-form textarea {
+  min-height: 150px;
+  resize: none;
+  /* Evita que el usuario lo deforme */
+}
+/* 3. Efecto cuando el usuario hace clic para escribir */
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #888;
+  font-weight: 400;
+}
+
+/* 4. Estilo específico para el área de mensaje */
+.contact-form textarea {
+  resize: vertical;
+  /* Permite estirar hacia abajo pero no hacia los lados */
+  min-height: 120px;
+}
+
+/* 5. Alineación de la casilla de privacidad */
+.form-privacy {
+  display: flex;
+  align-items: flex-start;
+  /* Alinea el checkbox arriba del texto */
+  gap: 12px;
+  margin-bottom: 25px;
+  text-align: left;
+  font-size: 14px;
+  color: #444;
+}
+
+.form-privacy input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  cursor: pointer;
+}
+/* 6. El botón (basado en lo que se ve al final de tu captura) */
+.form-privacy {
+  display: flex;
+  align-items: flex-start;
+  /* Alinea el checkbox con la primera línea de texto */
+  gap: 12px;
+  margin: 20px 0;
+  font-size: 14px;
+  color: #444;
+  cursor: pointer;
+}
+
+.form-privacy input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  flex-shrink: 0;
+  /* Evita que el checkbox se aplaste en móviles */
+}
 /* Columna Derecha */
 .contact-info-sidebar {
   flex: 1;
@@ -1571,35 +1739,7 @@ background-color: #e5e5e5;
   text-decoration: none;
   font-size: 15px;
 }
-        /* 1. HERO - ANCHO COMPLETO */
-        .hero-contact-header {
-        width: 100%;
-        height: 250px;
-        background: linear-gradient(135deg, #9bf4d2, #759bd5);
-        margin-top:152px;
-        /* Degradado profesional */
-        padding: 60px 0;
-        text-align: center;
-        color: #0f2a44;
-        margin-bottom:60px;
-        }
-    
-        .hero-contact-title {
-          font-size: 3rem;
-          font-weight: 800;
-          letter-spacing: -1px;
-          align-items: center;
-        }
-    
-        .hero-contact-subtitle {
-          font-size: 1.2rem;
-          max-width: 600px;
-          margin: 0 auto;
-          opacity: 0.9;
-          font-weight:600;
-          color:white;
-        }
-    
+     
        
            
 
@@ -1761,15 +1901,15 @@ background-color: #e5e5e5;
      }
   
      /* 3. Ajuste CRÍTICO para que el menú aparezca */
-     .nav-links {
-          width: 100%;
-      display: none;
-       /* Por defecto escondido */
-       position: absolute;
-       top: 100%;
-       /* Aparece justo debajo del logo */
-       left: 0;
-       background-color: #ffffff;
+     .nav-links  {
+     width: 100%;
+     display: none;
+     /* Por defecto escondido */
+     position: absolute;
+     top: 100%;
+     /* Aparece justo debajo del logo */
+     left: 0;
+    background-color: #ffffff;
        flex-direction: column;
        padding:10px 0;
        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
@@ -2385,10 +2525,6 @@ text-align: center;
     min-height: auto;
   }
 }
-
-
-
-
 
 
 
