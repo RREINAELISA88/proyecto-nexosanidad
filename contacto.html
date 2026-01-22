@@ -25,7 +25,8 @@
     {
       "@context": "https://schema.org",
       "@type": "Organization",
-      "name": "NexoSanidad",
+     "name": "NexoSanidad - Lenca S.L.",
+     "legalName": "Lenca S.L.",
       "url": "https://nexosanidad.com",
       "logo": "https://nexosanidad.com/img/logo.png",
       "contactPoint": {
@@ -55,11 +56,11 @@
             </a>
         </div>
         <nav class="nav-links" id="navLinks">
-            <a href="index.html">SERVICIOS PARA HOSPITALES</a>
-            <a href="personal_de_salud.html">PERSONAL DE SALUD</a>
-            <a href="sobre_nosotros.html">SOBRE NOSOTROS</a>
-            <a href="contacto.html">CONTACTO</a>
-            <a href="blog.html">BLOG</a>
+        <a href="index.html">Servicios para Hospitales</a>
+        <a href="personal_de_salud.html">Trabajar como Médico en España</a> 
+        <a href="sobre_nosotros.html">Sobre NexoSanidad</a>
+        <a href="blog.html">Guías y Actualidad</a>
+        <a href="contacto.html">Contacto</a>
             <a href="https://wa.me/34604870011" target="_blank" class="social-btn" aria-label="WhatsApp">
                 <i class="fa-brands fa-whatsapp"></i>
             </a>
@@ -86,11 +87,46 @@
   <div class="contact-main-layout">
 
     <!-- Área de contenido -->
-    <div class="contact-content-area">
-      <p class="contact-subtitle">
-        Estamos aquí para ayudarte. Escríbenos, llámanos o visítanos en nuestra oficina central.
-      </p>
-    </div>
+      <div class="contact-content-area">
+    <p class="contact-subtitle">
+        Estamos aquí para ayudarte. Escríbenos y nuestro equipo te contactará a la brevedad.
+    </p>
+
+   <form action="enviar.php" method="POST" class="contact-form">
+        
+        <div class="form-group">
+            <input type="text" name="nombre" placeholder="Nombre completo" required aria-label="Nombre completo">
+        </div>
+
+        <div class="form-group">
+            <input type="email" name="email" placeholder="Correo electrónico" required aria-label="Correo electrónico">
+        </div>
+
+        <div class="form-group">
+            <select name="perfil" required aria-label="Perfil profesional">
+                <option value="" disabled selected>¿Cuál es tu perfil?</option>
+                <option value="hospital">Soy un Hospital / Clínica</option>
+                <option value="medico">Soy Personal Sanitario</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <textarea name="mensaje" rows="5" placeholder="Tu mensaje o consulta..." required aria-label="Mensaje"></textarea>
+        </div>
+
+        <div class="form-privacy">
+            <label>
+                <input type="checkbox" name="privacidad" required> 
+                He leído y acepto la <a href="politicas-privacidad.html">Política de Privacidad</a> de Lenca S.L.
+            </label>
+        </div>
+
+        <button type="submit" class="btn-primary">Enviar Mensaje</button>
+    </form>
+</div>
+      
+     
+  
 
     <!-- Sidebar con imagen y bloques de info -->
     <div class="contact-info-sidebar">
@@ -101,19 +137,22 @@
       </div>
 
       <!-- Tarjeta: Mapa -->
+      
       <a class="info-item map" 
-         href="https://maps.app.goo.gl/CC1X8Cg198EBom8E9" 
-         target="_blank" rel="noopener noreferrer">
-        <i class="fas fa-map-marker-alt"></i>
-        <div class="info-details">
-          <h3>Nuestra oficina</h3>
-          <p>
-            Àtic Coworking Business Center<br>
-            C/ Balançó i Boter 22, Ático (2a plt.)<br>
-            08302, Mataró (Barcelona)
-          </p>
-        </div>
-      </a>
+   href="https://maps.google.com/?cid=5764258671651041891&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" 
+   target="_blank" 
+   rel="noopener noreferrer">
+    <i class="fas fa-map-marker-alt"></i>
+    <div class="info-details">
+        <h3>Nuestra oficina</h3>
+        <p>
+            ÀTIC Coworking Business Center<br>
+            Carrer Balançó i Boter, 22<br>
+            08302 Mataró, Barcelona
+        </p>
+    </div>
+</a>
+      
 
       <!-- Tarjeta: Horario -->
       <div class="info-item">
@@ -151,55 +190,54 @@
 
 
     <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-grid">
-                <div class="footer-block">
-                    <img src="img/logo-nexosanidad-reclutamiento-sanitario.png.webp" class="footer-logo" alt="NexoSanidad">
-                    <p class="footer-small">El puente de confianza.</p>
-                </div>
+    <div class="footer-container">
+        <div class="footer-grid">
+            <div class="footer-block">
+                <img src="img/logo-nexosanidad-reclutamiento-sanitario.png.webp" class="footer-logo" alt="NexoSanidad - Reclutamiento de Personal Sanitario">
+                <p class="footer-small">El puente de confianza entre el talento y el sector salud.</p>
+            </div>
 
-                <div class="footer-block">
-                    <h3 class="footer-title">Enlaces Rápidos</h3>
-                    <ul class="footer-list">
-                        <li><a href="index.html">Para Hospitales</a></li> 
-                        <li><a href="personal_de_salud.html">Personal de Salud</a></li>  
-                        <li><a href="sobre_nosotros.html">Sobre Nosotros</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                    </ul>
-                </div>
+            <div class="footer-block">
+                <h3 class="footer-title">Enlaces Rápidos</h3>
+                <ul class="footer-list">
+                    <li><a href="index.html">Servicios para Hospitales</a></li>
+                    <li><a href="personal_de_salud.html">Trabajar como Médico en España</a> </li> 
+                    <li><a href="sobre_nosotros.html">Sobre NexoSanidad</a></li>
+                    <li><a href="blog.html">Guías y Actualidad</a></li> 
+                    <li><a href="contacto.html">Contacto</a></li> 
+       
+     
+       
+       
+                    
+                   
+                    <li></li>
+                </ul>
+            </div>
 
-                <div class="footer-block">
-                    <h3 class="footer-title">Contacto</h3>
-                    <ul class="footer-list">
-                        <li>
-                            <a href="mailto:info@nexosanidad.com" class="contact-link">
-                                <i class="fas fa-envelope"></i> info@nexosanidad.com
-                            </a>
-                        </li>
-                        <li>
-                            <a href="tel:+34604870011" class="contact-link">
-                                <i class="fas fa-phone-alt"></i> +34 604 87 00 11
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+            <div class="footer-block">
+                <h3 class="footer-title">Contacto</h3>
+                <ul class="footer-list">
+                    <li><a href="mailto:info@nexosanidad.com" class="contact-link"><i class="fas fa-envelope"></i> info@nexosanidad.com</a></li>
+                    <li><a href="tel:+34604870011" class="contact-link"><i class="fas fa-phone-alt"></i> +34 604 87 00 11</a></li>
+                </ul>
+            </div>
 
-                <div class="footer-block">
-                    <h3 class="footer-title">Síguenos</h3>
-                    <div class="footer-social">
-                        <a href="https://wa.me/34604870011" target="_blank" class="footer-social-btn"><i class="fa-brands fa-whatsapp"></i></a>
-                        <a href="https://facebook.com/oscar34nexosanidad" target="_blank" class="footer-social-btn"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="https://instagram.com/oscar34nexosanidad" target="_blank" class="footer-social-btn"><i class="fa-brands fa-instagram"></i></a>
-                    </div>
+            <div class="footer-block">
+                <h3 class="footer-title">Síguenos</h3>
+                <div class="footer-social">
+                    <a href="https://wa.me/34604870011" target="_blank" rel="noopener" class="footer-social-btn" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://facebook.com/oscar34nexosanidad" target="_blank" rel="noopener" class="footer-social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://instagram.com/oscar34nexosanidad" target="_blank" rel="noopener" class="footer-social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
                 </div>
             </div>
         </div>
-
-        <div class="footer-legal">
-           <p>&copy; 2025 NexoSanidad | <a href="avisolegal.html">Aviso Legal</a> | <a href="politicas-privacidad.html">Política de Privacidad</a></p>
-        </div>
-    </footer>
+    </div>
+    <div class="footer-legal">
+        <p>&copy; 2026 Lenca S.L. | Todos los derechos reservados | <a href="avisolegal.html">Aviso Legal</a> | <a href="politicas-privacidad.html">Política de Privacidad</a></p>
+    </div>
+</footer>
+    
     <script src="main.js"></script>
      <a href="https://wa.me/34604870011?text=Hola,%20vengo%20de%20la%20web%20NexoSanidad%20y%20deseo%20más%20información" 
    class="whatsapp-float" 
@@ -209,7 +247,6 @@
     <i class="fab fa-whatsapp"></i>
 </a>
 </body>
-
 </html>
 
 
