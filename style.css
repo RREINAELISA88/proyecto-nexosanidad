@@ -1468,7 +1468,7 @@ border-image: linear-gradient(
                   background: #ffffff;
                   padding: 30px;
                   border-radius: 12px;
-                  border-bottom: 4px solid #007bff;
+                  border-bottom: 4px solid  #0A6ED1;
                   /* Detalle de color corporativo */
                   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
                   transition: transform 0.3s ease;
@@ -2522,6 +2522,7 @@ text-align: center;
     min-height: auto;
   }
 }
+
 
 
 
