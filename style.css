@@ -2319,14 +2319,16 @@ background-color: #e5e5e5;
         right: 20px;
         font-size: 30px;
     }
-.hero {
-  margin-top: 140px;
-  /* ajusta si el header crece */
-  min-height:75vh;
-}
+
+  .hero {
+    min-height: auto;
+    padding-top: 140px;
+    padding-bottom: 60px;
+  }
+
 
 .hero-title {
-font-size: 1.8rem;
+font-size: 1.4rem;
 text-align: center;
 }
 
@@ -2522,6 +2524,7 @@ text-align: center;
     min-height: auto;
   }
 }
+
 
 
 
