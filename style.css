@@ -2494,18 +2494,7 @@ text-align: center;
 /* ========================= */
 @media (max-width: 600px) {
 
-  .hero {
- min-height: auto;
- padding-top:150px;
-
-  }
-
-.hero-content{
-height:auto;
- padding-bottom:50px;
-
-   
-  }
+ 
 
   .proceso-section {
     padding: 60px 15px;
@@ -2546,6 +2535,7 @@ height:auto;
     min-height: auto;
   }
 }
+
 
 
 
