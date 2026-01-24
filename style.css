@@ -749,11 +749,6 @@ border-image: linear-gradient(
   box-sizing: border-box;
 }
 
-
-
-
-
-
 /* Imagen */
 .nf-info .img-enf {                                                                  
   width: 100%;
@@ -1187,11 +1182,9 @@ border-image: linear-gradient(
   width: 100%;
   min-height:520px;
   overflow: hidden;
-  margin-top:142px;
+  margin-top:85px;
   
 }
-
-
 
 /* Imagen como fondo */
 .banner img {
@@ -1897,18 +1890,18 @@ background-color: #e5e5e5;
   
      /* 3. Ajuste CRÍTICO para que el menú aparezca */
      .nav-links  {
-     width: 100%;
-     display: none;
+      width: 100%;
+      display: none;
      /* Por defecto escondido */
      position: absolute;
      top: 100%;
      /* Aparece justo debajo del logo */
      left: 0;
-    background: rgb(244, 248, 241);
-       flex-direction: column;
-       padding:10px 0;
-       box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-       z-index: 1050;
+     background: rgb(244, 248, 241);
+     flex-direction: column;
+     padding:10px 0;
+     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+     z-index: 1050;
      }
   
      /* 4. Esta clase se activa con el clic de JS */
@@ -1926,9 +1919,6 @@ background-color: #e5e5e5;
       }
 
                
-
-    
- 
  /* ------------------------------------ */
  /* SECCIONES GENERALES                  */
  /* ------------------------------------ */
@@ -1960,10 +1950,17 @@ background-color: #e5e5e5;
    /*------------------------------------*/  
 
 /* Título y subtítulo */
+
+
 .title-fullwidth {
+  margin-left: calc(-50vw + 50%);
+  background: linear-gradient(135deg, #7bf3c5, #729edf);
+  margin-top:25px;
   text-align: center;
-  margin-bottom: 20px;
-}
+
+
+}      
+
 
 .title-fullwidth .title-enf {
   text-align: center;
@@ -1983,18 +1980,6 @@ background-color: #e5e5e5;
 .beneficios-grid {
   grid-template-columns: 1fr;
      }
-
-
-  
-.title-fullwidth {
-  margin-left: calc(-50vw + 50%);
-  background: linear-gradient(135deg, #7bf3c5, #729edf);
-  margin-top: 100px;
-  text-align: center;
-
-}
-
-
 
 .enfermeras-grid {
   margin: auto;
@@ -2138,6 +2123,7 @@ background-color: #e5e5e5;
 
  .banner {
    min-height: 380px;
+   margin-top:85px;
  }
 
  .title-blg {
@@ -2523,7 +2509,12 @@ text-align: center;
     text-align: center;
     min-height: auto;
   }
+  .banner {
+      min-height: 380px;
+      margin-top:85px;
+    }
 }
+
 
 
 
