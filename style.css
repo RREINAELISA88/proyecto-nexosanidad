@@ -145,74 +145,63 @@
  /* ------------------------------------ */
  /* HERO                                 */
  /* ------------------------------------ */
-  .hero {
+ .hero {
   position: relative;
-  min-height: 65vh;
-  margin-top: 120px;
-  /* 👈 MISMO ALTO QUE EL HEADER */
+  min-height: 100svh; /* mejor que 100vh en móviles */
   display: flex;
   align-items: center;
-  justify-content: center;
+  padding: 120px 40px 80px;
   overflow: hidden;
- }
- 
-  
+}
 
- .hero-bg-img {
-   position: absolute;
-   inset: 0;
-   width: 100%;
-   height: 100%;
-   object-fit: cover;
-   /* CLAVE */
-   z-index: 0;
- }
+.hero-bg-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
 
- 
- .hero::after {
-   content: "";
-   position: absolute;
-   inset: 0;
-   background: rgba(0, 0, 0, 0.248);
-   z-index: 1;
- }
-.hero::after {
+/* overlay oscuro */
+.hero::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.304);
-  z-index: 1;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 2;
 }
+
 .hero-content {
   position: relative;
-  z-index: 2;
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 1.25rem;
+  z-index: 3;
+  max-width: 680px;
+  color: #ffffff;
 }
 
 .hero-title {
-  font-size: 2.8rem;
+  font-size: 42px;
+  font-weight: 700;
   line-height: 1.2;
-  margin-bottom: 1rem;
-  max-width: 700px;
-  color:#fff;
+  margin-bottom: 20px;
 }
 
 .hero-p {
-  color: #fff;
-  font-size: 1.15rem;
-  line-height: 1.6;
-  margin-bottom: 1rem;
-  max-width: 650px;
+  font-size: 18px;
+  margin-bottom: 15px;
 }
 
 .hero-trust {
-  font-size: 0.95rem;
-  opacity: 0.9;
-  margin-bottom: 2rem;
-  color: #fff;
+  font-size: 14px;
+  margin-bottom: 30px;
 }
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
  /* ------------------------------------ */
  /* BOTONES                              */
  /* ------------------------------------ */
@@ -2323,39 +2312,38 @@ background-color: #e5e5e5;
  }
 
 .hero {
- min-height: auto;
- padding-top:180px;
- padding-bottom: 60px;
+    min-height: auto;
+    padding: 140px 20px 60px;
   }
 
-.hero-content{
-height:auto;
- padding-bottom:90px;
-
-   
+  .hero-content {
+    max-width: 100%;
+    text-align: center;
   }
 
-.hero-title {
-padding-bottom:20px;
-font-size: 1.4rem;
-text-align: center;
-}
+  .hero-title {
+    font-size: 26px;
+    line-height: 1.25;
+  }
 
- .hero-p,
- .hero-trust {
-   text-align: center;
- }
+  .hero-p {
+    font-size: 15px;
+  }
 
-    .hero-buttons {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .hero-buttons a {
-      width: 100%;
-      max-width: 320px;
-      text-align: center;
-    }
+  .hero-trust {
+    font-size: 13px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 25px;
+  }
+
+  .hero-buttons a {
+    width: 100%;
+    text-align: center;
+  }
     
 /*********SECTION-ENFERMERAS*********/
     .nf-wrapper {
@@ -2464,6 +2452,17 @@ text-align: center;
 /* RESPONSIVE – TABLET */
 /* ========================= */
 @media (max-width: 1024px) {
+   .hero {
+    padding: 120px 30px 70px;
+  }
+
+  .hero-title {
+    font-size: 34px;
+  }
+
+  .hero-p {
+    font-size: 16px;
+  }
 
   .proceso-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -2535,6 +2534,7 @@ text-align: center;
     min-height: auto;
   }
 }
+
 
 
 
