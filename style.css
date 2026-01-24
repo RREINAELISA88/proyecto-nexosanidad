@@ -2322,13 +2322,13 @@ background-color: #e5e5e5;
 
 .hero {
  min-height: auto;
- padding-top:120px;
+ padding-top:180px;
  padding-bottom: 60px;
   }
 
 .hero-content{
  min-height:auto;
- padding-top:90px;
+ padding-bottom:90px;
 
    
   }
@@ -2531,6 +2531,7 @@ text-align: center;
     min-height: auto;
   }
 }
+
 
 
 
