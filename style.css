@@ -61,14 +61,12 @@
  /* HEADER                               */
  /* ------------------------------------ */
  .header {
-  min-height: 100px;
-    height: auto;
+    height: 120px;
    display: flex;
    justify-content: space-between;
    align-items: center;
    padding: 10px 5%;
-   height: 150px;
-   position: fixed;
+    position: fixed;
    top: 0;
    width: 100%;
    background: rgb(244, 248, 241);
@@ -1906,7 +1904,7 @@ background-color: #e5e5e5;
      top: 100%;
      /* Aparece justo debajo del logo */
      left: 0;
-    background-color: #ffffff;
+    background: rgb(244, 248, 241);
        flex-direction: column;
        padding:10px 0;
        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
@@ -2312,6 +2310,10 @@ background-color: #e5e5e5;
 
 /* Ajuste para móviles: un poco más pequeño para no tapar contenido */
 @media (max-width: 768px) {
+   .header{
+    background: rgb(244, 248, 241);
+    height: 100px;
+  }
 .whatsapp-float {
  width: 50px;
  height: 50px;
@@ -2531,6 +2533,7 @@ text-align: center;
     min-height: auto;
   }
 }
+
 
 
 
