@@ -2329,7 +2329,7 @@ background-color: #e5e5e5;
   }
 
 .hero-content{
- min-height:auto;
+height:auto;
  padding-bottom:90px;
 
    
@@ -2494,6 +2494,19 @@ text-align: center;
 /* ========================= */
 @media (max-width: 600px) {
 
+  .hero {
+ min-height: auto;
+ padding-top:150px;
+
+  }
+
+.hero-content{
+height:auto;
+ padding-bottom:50px;
+
+   
+  }
+
   .proceso-section {
     padding: 60px 15px;
     margin-top: 6rem;
@@ -2533,6 +2546,7 @@ text-align: center;
     min-height: auto;
   }
 }
+
 
 
 
