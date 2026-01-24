@@ -1514,15 +1514,14 @@ border-image: linear-gradient(
             /*CONTACTO*/
 /*----------------------------------------*/
 
-
-.contact-section {
-  display:flex;
-  justify-content:center
-  padding: 40px 20px;
-    /* reduce el padding superior e inferior */
-    margin-bottom: 40px;
-    /* opcional */
-background-color: #e5e5e5;
+.contact-section{
+  display: flex;
+  justify-content: center;
+   padding: 40px 20px;
+  /* reduce el padding superior e inferior */
+  margin-bottom: 40px;
+  /* opcional */
+  background-color: #e5e5e5;
 
 }
 
@@ -2536,6 +2535,7 @@ text-align: center;
 }
 
 }
+
 
 
 
