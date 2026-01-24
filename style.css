@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 :root {
   /* Colores Principales */
@@ -40,11 +41,11 @@
  body,
  html {
    overflow-x: hidden;
-  max-width: 100%;
-    overflow-x: hidden;
-    height: 100%;
-      font-family: 'Poppins';
-      background: var(--bg);
+   max-width: 100%;
+   overflow-x: hidden;
+   height: 100%;
+   font-family: 'Poppins';
+   background: var(--bg);
  }
    
  a {
@@ -61,12 +62,12 @@
  /* HEADER                               */
  /* ------------------------------------ */
  .header {
-    height: 120px;
+    height:120px;
    display: flex;
    justify-content: space-between;
    align-items: center;
    padding: 10px 5%;
-    position: fixed;
+   position: fixed;
    top: 0;
    width: 100%;
    background: rgb(244, 248, 241);
@@ -145,67 +146,80 @@
  /* ------------------------------------ */
  /* HERO                                 */
  /* ------------------------------------ */
- .hero {
+  .hero {
   position: relative;
-  min-height: 100svh; /* mejor que 100vh en móviles */
+  min-height: 65vh;
+  margin-top: 120px;
+  /* 👈 MISMO ALTO QUE EL HEADER */
   display: flex;
   align-items: center;
-  padding: 120px 40px 80px;
+  justify-content: center;
   overflow: hidden;
-}
+ }
+ 
+  
 
-.hero-bg-img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 1;
-}
+ .hero-bg-img {
+   position: absolute;
+   inset: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   /* CLAVE */
+   z-index: 0;
+ }
 
-/* overlay oscuro */
-.hero::before {
+ 
+ .hero::after {
+   content: "";
+   position: absolute;
+   inset: 0;
+   background: rgba(0, 0, 0, 0.248);
+   z-index: 1;
+ }
+.hero::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.45);
-  z-index: 2;
+  background: rgba(0, 0, 0, 0.304);
+  z-index: 1;
 }
-
 .hero-content {
   position: relative;
-  z-index: 3;
-  max-width: 680px;
-  color: #ffffff;
+  z-index: 2;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
 }
 
 .hero-title {
-  font-size: 42px;
-  font-weight: 700;
+  font-size: 2.8rem;
   line-height: 1.2;
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
+  max-width: 700px;
+  color:#fff;
 }
 
 .hero-p {
-  font-size: 18px;
-  margin-bottom: 15px;
+  color: #fff;
+  font-size: 1.15rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  max-width: 650px;
 }
 
 .hero-trust {
-  font-size: 14px;
-  margin-bottom: 30px;
+  font-size: 0.95rem;
+  opacity: 0.9;
+  margin-bottom: 2rem;
+  color: #fff;
 }
-
-.hero-buttons {
-  display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
-}
-
  /* ------------------------------------ */
  /* BOTONES                              */
  /* ------------------------------------ */
-
+ .hero-content {
+   text-align: center;
+ }
 
  .hero-buttons {
    display: flex;
@@ -349,7 +363,7 @@ border-image: linear-gradient(
     margin-top:10rem;
     }
 
-  
+   
 
    /* --- Grid: El contenedor principal --- */
     .proceso-grid {
@@ -734,6 +748,11 @@ border-image: linear-gradient(
   max-width: 600px;  /* no se haga gigante en pantallas enormes */
   box-sizing: border-box;
 }
+
+
+
+
+
 
 /* Imagen */
 .nf-info .img-enf {                                                                  
@@ -1448,7 +1467,7 @@ border-image: linear-gradient(
                   background: #ffffff;
                   padding: 30px;
                   border-radius: 12px;
-                  border-bottom: 4px solid  #0A6ED1;
+                  border-bottom: 4px solid #0A6ED1;
                   /* Detalle de color corporativo */
                   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
                   transition: transform 0.3s ease;
@@ -1461,7 +1480,7 @@ border-image: linear-gradient(
         
                 .homologacion-card i {
                   font-size: 2.5rem;
-                  color: #0A6ED1;
+                  color:#0A6ED1;
                   margin-bottom: 15px;
                 }
         
@@ -1852,7 +1871,7 @@ background-color: #e5e5e5;
 
       .header {
      backdrop-filter: none;
-      height: 120px;
+      height:120px;
     padding: 10px 20px;
       position: fixed;
       top: 0;
@@ -1860,8 +1879,7 @@ background-color: #e5e5e5;
       right: 0;
       z-index: 1000;
       width:100%;
-      height:150px;
-      background: rgba(255, 255, 255, 0.847);
+      background: rgb(244, 248, 241);
       backdrop-filter: blur(6px);
       display:flex;
       justify-content:space-between;
@@ -2292,51 +2310,43 @@ background-color: #e5e5e5;
 
 /* Ajuste para móviles: un poco más pequeño para no tapar contenido */
 @media (max-width: 768px) {
-   .header{
+  .header{
     background: rgb(244, 248, 241);
     height: 100px;
   }
 .whatsapp-float {
  width: 50px;
- height: 50px;
- bottom: 20px;
- right: 20px;
- font-size: 30px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 30px;
+    }
+.hero {
+  margin-top:100px;
+  /* ajusta si el header crece */
+  min-height:75vh;
+}
+
+.hero-title {
+font-size: 1.8rem;
+text-align: center;
+}
+
+ .hero-p,
+ .hero-trust {
+   text-align: center;
  }
 
-.hero {
-    min-height: auto;
-    padding: 140px 20px 60px;
-  }
-
-  .hero-content {
-    max-width: 100%;
-    text-align: center;
-  }
-
-  .hero-title {
-    font-size: 26px;
-    line-height: 1.25;
-  }
-
-  .hero-p {
-    font-size: 15px;
-  }
-
-  .hero-trust {
-    font-size: 13px;
-  }
-
-  .hero-buttons {
-    flex-direction: column;
-    gap: 12px;
-    margin-top: 25px;
-  }
-
-  .hero-buttons a {
-    width: 100%;
-    text-align: center;
-  }
+    .hero-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .hero-buttons a {
+      width: 100%;
+      max-width: 320px;
+      text-align: center;
+    }
     
 /*********SECTION-ENFERMERAS*********/
     .nf-wrapper {
@@ -2445,17 +2455,6 @@ background-color: #e5e5e5;
 /* RESPONSIVE – TABLET */
 /* ========================= */
 @media (max-width: 1024px) {
-   .hero {
-    padding: 120px 30px 70px;
-  }
-
-  .hero-title {
-    font-size: 34px;
-  }
-
-  .hero-p {
-    font-size: 16px;
-  }
 
   .proceso-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -2485,8 +2484,6 @@ background-color: #e5e5e5;
 /* RESPONSIVE – MÓVIL */
 /* ========================= */
 @media (max-width: 600px) {
-
- 
 
   .proceso-section {
     padding: 60px 15px;
@@ -2527,16 +2524,6 @@ background-color: #e5e5e5;
     min-height: auto;
   }
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
