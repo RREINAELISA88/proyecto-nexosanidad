@@ -205,9 +205,7 @@
  /* ------------------------------------ */
  /* BOTONES                              */
  /* ------------------------------------ */
- .hero-content {
-   text-align: center;
- }
+
 
  .hero-buttons {
    display: flex;
@@ -2534,6 +2532,7 @@ background-color: #e5e5e5;
     min-height: auto;
   }
 }
+
 
 
 
