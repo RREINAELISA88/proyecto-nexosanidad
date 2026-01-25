@@ -96,6 +96,7 @@
    width: clamp(120px, 15vw, 160px);
    height: auto;
    top: 0;
+   margin-top:10px;
  }
 
 /* NAV DESKTOP */
@@ -2535,6 +2536,7 @@ text-align: center;
 }
 
 }
+
 
 
 
